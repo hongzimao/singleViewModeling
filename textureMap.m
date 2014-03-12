@@ -1,4 +1,4 @@
-function textureMap(img, H, pos)
+function textureMap(img, H, pos, mode)
 pos = reshape(pos, 2, 4)'; % 4 points on images
 minpos = min(pos);
 il = minpos(1);
@@ -22,6 +22,24 @@ for i = il:ih
                                    + b*(1-a)*img(y+1, x, :);
    end
 end
-figure(2);
-imshow(uint8(texture));
+
+if strcmp(mode,'h1') == 1
+    figure(2);
+    textureout = imrotate(uint8(texture),180);
+    imwrite(textureout, 'texture1.bmp');
+    imshow(textureout);
+    
+elseif strcmp(mode,'h2') == 1
+    figure(3);
+    textureout = imrotate(uint8(texture),90);
+    imwrite(textureout, 'texture2.bmp');
+    imshow(textureout);
+    
+else
+    figure(4);
+    textureout = flipdim(imrotate(uint8(texture),90),2);
+    imwrite(textureout, 'texture3.bmp');
+    imshow(textureout);
+end
+
 end
