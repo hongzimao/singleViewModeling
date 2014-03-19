@@ -1,0 +1,61 @@
+#VRML V2.0 utf8
+
+Shape{  
+	appearance Appearance { 
+		texture ImageTexture { url "1.jpg"}
+			}
+	geometry IndexedFaceSet {
+		coord Coordinate { 
+			point [ -3.91 1.95 -2.96, 
+				-4.01 1.8 -0.01,
+				0 1.86 0,
+				0.06 1.92 -2.97
+				] }
+	coordIndex [0,1,2,3,-1]
+	texCoord TextureCoordinate {
+			point [0 1,
+			       0 0, 
+			       1 0,
+			       1 1]}
+			}
+}
+
+Shape{  
+	appearance Appearance { 
+		texture ImageTexture { url "2.jpg"}
+			}
+	geometry IndexedFaceSet {
+		coord Coordinate { 
+			point [ 0 1.86 0, 
+				0 0 0,
+				0.06 0 -2.97,
+				0.06 1.92 -2.97
+				] }
+	coordIndex [0,1,2,3,-1]
+	texCoord TextureCoordinate {
+			point [0 1,
+			       0 0, 
+			       1 0,
+			       1 1]}
+			}
+}
+
+Shape{  
+	appearance Appearance { 
+		texture ImageTexture { url "3.jpg"}
+			}
+	geometry IndexedFaceSet {
+		coord Coordinate { 
+			point [ -4.01 1.8 -0.01, 
+				-4.01 0 -0.01,
+				0 0 0,
+				0 1.86 0
+				] }
+	coordIndex [0,1,2,3,-1]
+	texCoord TextureCoordinate {
+			point [0 1,
+			       0 0, 
+			       1 0,
+			       1 1]}
+			}
+}
