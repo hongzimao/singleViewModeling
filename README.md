@@ -1,5 +1,5 @@
 HKUST COMP 5421 Spring 2014 Computer Vision Project 2
-singleViewModeling
+Single View Modeling
 ==========================================================================
 
 The code in 'box' folder is for course demo, so it contains only limited functionalities. 
